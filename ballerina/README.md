@@ -17,7 +17,7 @@ To use the HubSpot Line items connector, you must have access to the HubSpot API
 
 ### Step 01 : Create/Login to a HubSpot Developer Account
 
- If you have an account already go to the [Hubspot account portal](https://app.hubspot.com/myaccounts-beta)
+ If you have an account already go to the [HubSpot account portal](https://app.hubspot.com/myaccounts-beta)
 
  If you don't have a developer account, register for a free HubSpot developer account.[(click here)](https://app.hubspot.com/signup-hubspot/developers?_ga=2.207749649.2047916093.1734412948-232493525.1734412948&step=landing_page)
 
@@ -29,11 +29,11 @@ Note: These accounts are only for development and testing purposes. In productio
 
 1. Go to Test Account section from the left sidebar.
 
-   ![Hubspot Developer Portal](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/test_acc_1.png)
+   ![HubSpot Developer Portal](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/test_acc_1.png)
 
 2. Click Create developer test account.
 
-   ![Hubspot Developer Test Account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/test_acc_2.png)
+   ![HubSpot Developer Test Account](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/test_acc_2.png)
 
 3. Create developer test account by providing a name
 
@@ -57,15 +57,15 @@ Click on `Create App`
    * `crm.objects.line_items.read`
    * `crm.objects.line_items.write`
 
-   ![Hubspot set scope](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/image-2.png)
+   ![HubSpot set scope](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/image-2.png)
 
 3. Add your Redirect URI in the relevant section. You can also use localhost addresses for local development purposes. Click Create App.
-   ![Hubspot create app final](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/create_app_final.png)
+   ![HubSpot create app final](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/create_app_final.png)
 
 ### Step 5: Get your Client ID and Client Secret
 
 - Navigate to the Auth section of your app. Make sure to save the provided Client ID and Client Secret.
-  ![Hubspot get credentials](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/get_credentials.png)
+  ![HubSpot get credentials](https://raw.githubusercontent.com/ballerina-platform/module-ballerinax-hubspot.crm.object.lineitems/main/docs/setup/resources/get_credentials.png)
 
 ### Step 6: Setup Authentication Flow
 
