@@ -1,6 +1,6 @@
 _Author_:  <!-- TODO: Add author name --> @hanaahh21\
 _Created_: <!-- TODO: Add date --> 2024/12/12\
-_Updated_: <!-- TODO: Add date --> 2025/01/03\
+_Updated_: 2026/06/18 \\
 _Edition_: Swan Lake
 
 # Sanitation for OpenAPI specification
@@ -8,7 +8,6 @@ _Edition_: Swan Lake
 This document records the sanitation done on top of the official OpenAPI specification from HubSpot CRM Objects Line Items
 The OpenAPI specification is obtained from [Line_items OpenAPI](https://github.com/HubSpot/HubSpot-public-api-spec-collection/blob/main/PublicApiSpecs/CRM/Line%20Items/Rollouts/424/v3/lineItems.json).
 These changes are done in order to improve the overall usability, and as workarounds for some known language limitations.
-
 
 1. Change the url property of the servers object:
 
