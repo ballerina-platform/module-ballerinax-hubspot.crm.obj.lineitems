@@ -23,7 +23,7 @@ import ballerina/http;
 public isolated client class Client {
     final http:Client clientEp;
     final readonly & ApiKeysConfig? apiKeyConfig;
-    # Gets invoked to initialize the `connector`.
+    # Gets invoked to initialize the `connector`
     #
     # + config - The configurations to be used when initializing the `connector` 
     # + serviceUrl - URL of the target service 
@@ -39,7 +39,7 @@ public isolated client class Client {
         self.clientEp = check new (serviceUrl, httpClientConfig);
     }
 
-    # Read a batch of line items by internal ID, or unique property values
+    # Read line items by ID or property
     #
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
@@ -59,8 +59,9 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Read
+    # Retrieve a line item by ID
     #
+    # + lineItemId - The unique identifier of the line item to retrieve
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - successful operation 
@@ -77,8 +78,9 @@ public isolated client class Client {
         return self.clientEp->get(resourcePath, httpHeaders);
     }
 
-    # Archive
+    # Archive a line item by ID
     #
+    # + lineItemId - The unique identifier of the line item to archive
     # + headers - Headers to be sent with the request 
     # + return - No content 
     resource isolated function delete [string lineItemId](map<string|string[]> headers = {}) returns error? {
@@ -92,8 +94,9 @@ public isolated client class Client {
         return self.clientEp->delete(resourcePath, headers = httpHeaders);
     }
 
-    # Update
+    # Update a line item by ID
     #
+    # + lineItemId - The unique identifier of the line item to update
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
     # + return - successful operation 
@@ -148,7 +151,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Update a batch of line items by internal ID, or unique property values
+    # Update line items by ID or property
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -166,7 +169,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # List
+    # List a page of line items
     #
     # + headers - Headers to be sent with the request 
     # + queries - Queries to be sent with the request 
@@ -184,7 +187,7 @@ public isolated client class Client {
         return self.clientEp->get(resourcePath, httpHeaders);
     }
 
-    # Create
+    # Create a line item
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -202,7 +205,7 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
-    # Create or update a batch of line items by unique property values
+    # Upsert line items by property
     #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
@@ -220,6 +223,8 @@ public isolated client class Client {
         return self.clientEp->post(resourcePath, request, httpHeaders);
     }
 
+    # Search line items
+    #
     # + headers - Headers to be sent with the request 
     # + return - successful operation 
     resource isolated function post search(PublicObjectSearchRequest payload, map<string|string[]> headers = {}) returns CollectionResponseWithTotalSimplePublicObjectForwardPaging|error {
